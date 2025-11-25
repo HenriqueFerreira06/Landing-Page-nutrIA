@@ -1,0 +1,530 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #130D42;
+  background-color: #EDEDED;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+span{
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ===== INTRODUCAO ===== */
+.introducao{
+  padding: 4rem 8% 0;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 45vh;
+  background: #65D492;
+  background: linear-gradient(90deg, rgba(101, 212, 146, 1) 0%, rgba(187, 200, 101, 1) 100%);
+  margin: 0;
+}
+
+.introducao img{
+  height: 50px;
+  width: auto;
+  margin-bottom: 1rem;
+  margin-top: -0.7rem;
+}
+
+.introducao h1{
+ font-size: 3rem;
+}
+
+.introducao h3{
+  font-style: italic;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.linha1{
+  width: 190px;
+  height: 3px;
+  background-color: #0E0A2A;
+  margin-top: 2.5rem;
+  border-radius: 2px;
+}
+
+/* ===== O CENÁRIO ===== */
+.cenario{
+  padding: 4rem 8%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cenario-text h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.cenario-text h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color:#787593;
+  margin-top: 1rem;
+}
+
+.cenario-text p{
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* ===== O MOTIVO ===== */
+.motivo{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 8%;
+  justify-content: space-between;
+  background-color: #DFDFDF;
+}
+
+.motivo-text{
+  text-align: right;
+}
+
+.motivo-text h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.motivo-text p{
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.linha2{
+  width: 190px;
+  height: 5px;
+  background-color: #65D492;
+  margin-top: 1.5rem;
+  border-radius: 2px;
+  margin-left: 83%;
+}
+
+/* ===== A EQUIPE ===== */
+.equipe{
+  padding: 4rem 8%;
+  justify-content: space-between;
+}
+
+.equipe-text{
+  text-align: center;
+}
+
+.equipe-text h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.equipe-text h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color:#787593;
+  margin-top: 1rem;
+}
+
+.equipe-container{
+  margin-top: 4rem;
+}
+
+.cards-fileira-1, .cards-fileira-2{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cards-fileira-2{
+  margin-top: 1.5rem;
+}
+
+.card{
+  position: relative;
+  background: linear-gradient(180deg, rgba(223,223,228,1) 0%, rgba(175,175,195,1) 80%);
+  height: 300px;
+  width: 280px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;     
+}
+
+.card-img img {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 70%;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+#camilly, #filipe, #avila, #naka, #caue {
+  max-width: 64%;
+}
+
+.caixa-branca{
+  background-color: white;
+  width: 85%;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  opacity: 0.92;
+}
+
+.caixa-branca h6{
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.caixa-branca p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color:#787593;
+  margin-top: 0.5rem;
+}
+
+.caixa-linkedIn img{
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.caixa-linkedIn{
+  margin-top: 3%;
+}
+
+/* ===== MISSAO, VISAO E VALORES ===== */
+.missao {
+  margin-top: 4rem;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background:
+    linear-gradient(
+      to right,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0) 30%,
+      #e4e4ea 30%,
+      #e4e4ea 100%
+    ),
+    url("imagens/missaofundo.png");
+  background-size: cover;
+  background-position: left center;
+}
+
+.missao-container {
+  width: 80%;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.missao h1{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  max-width: 100px;
+}
+
+.card-missao {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card-missao img {
+  width: auto;
+  height: auto;
+}
+
+.card-missao h6 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f1333;
+}
+
+.card-missao p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #4a4a60;
+  line-height: 1.4;
+}
+
+.card-missao:hover{
+  transform: scale(1.07);
+}
+
+/* ===== PROXIMOS PASSOS ===== */
+.futuro{
+ padding: 4rem 8%;
+}
+
+.futuro h1{
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.futuro p{
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* ===== ENTRE EM CONTATO CONOSCO ===== */
+.contato{
+  padding: 4rem 8%;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contato h1{
+  color: #0A0A2A;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contato h3{
+  color: #787593;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.contato p{
+  color: #4a4a60;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  max-width: 400px;
+  line-height: 22px;
+}
+
+form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 500px;
+}
+
+textarea {
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+#contato-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0A0A2A;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== RODAPÉ ===== */
+.rodape{
+  background-color: #DFDFDF;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 8%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rodape-titulo h6{
+  font-size: 1.5rem;
+}
+
+.rodape-titulo h6{
+  font-size: 1.5rem;
+}
+
+.rodape-titulo p{
+  font-size: 0.8rem;
+  color: #787593;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.rodape-saiba h6{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.rodape-saiba a{
+  color: #787593;
+}
+
+.rodape-siga h6{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.linksaibamais{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.siga-icons{
+  gap:1rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.siga-icons img{
+  height: 25px;
+}
+
+/* ===== BOTÃO "VOLTAR AO TOPO" ===== */
+#btnTopo {
+  position: fixed;
+  bottom: 20px;   /* distância do fundo */
+  right: 20px;    /* distância da direita */
+  background-color:#130D42;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+
+#btnTopo:hover {
+  transform: scale(1.1);
+  background-color: #65C28A;
+}
+
+/* ===== ANIMAÇÃO AO ROLAR ===== */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablets */
+@media (max-width: 900px){
+
+  .introducao{
+    flex-direction: column;
+    text-align: center;
+    max-height: none;
+    gap: 2rem;
+  }
+
+  .intro-blur{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .cenario, .motivo{
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .missao{
+    flex-direction: column;
+    background-size: cover;
+    padding: 2rem 5%;
+  }
+
+  .missao-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px){
+
+  .introducao h1{
+    font-size: 2.2rem;
+  }
+
+  .cenario-text h1,
+  .motivo-text h1,
+  .equipe-text h1,
+  .futuro h1{
+    font-size: 2rem;
+  }
+
+  .card{
+    width: 90%;
+    height: 330px;
+  }
+
+  .card-img img{
+    max-width: 60%;
+    top: 40px;
+  }
+
+  .linha2{
+    margin-left: 0;
+  }
+
+  .missao{
+    background: #e4e4ea;
+  }
+
+  .rodape{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #btnTopo{
+    bottom: 10px;
+    right: 10px;
+  }
+}

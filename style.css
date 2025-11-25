@@ -1,0 +1,578 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #130D42;
+  background-color: #EDEDED;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* ===== INTRODUÇÃO ===== */
+.introducao{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 8%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#imglogo{
+  height: 50px;
+  width: auto;
+  margin-bottom: 1rem;
+  margin-top: -0.7rem;
+}
+
+.introducao-texto{
+  flex: 1 1 400px;
+}
+
+.introducao h1{
+ font-size: 3rem;
+}
+
+.introducao h3{
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.introducao p{
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.download-btn{
+  flex: 1 1 300px;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.download-btn img{
+  height: 30px;
+}
+
+.introducao-cell {
+  position: relative;
+  width: 400px;
+  height: 500px;
+}
+
+.blur {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.7;
+}
+
+.lime {
+  background-color: #adff2f;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+
+.green {
+  background-color: #7fffd4;
+  top: 60%;
+  right: -100px;
+  transform: translateY(-50%);
+}
+
+.introducao-cell img{
+  max-width: 100%;
+  max-height: 28rem;
+  object-fit: contain;
+  position: relative;
+  z-index: 10;
+}
+
+/* ===== RESPONSIVIDADE da INTRODUÇÃO ===== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== FAIXA VERDE DEGRADÊ ===== */
+.faixaverde{
+  background: #65D492;
+  background: linear-gradient(90deg, rgba(101, 212, 146, 1) 0%, rgba(187, 200, 101, 1) 100%);
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 8%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.faixaverde img{
+  height: 70px;
+}
+
+.faixaverde h6{
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+  margin-right: 2rem;
+}
+/* ===== RECURSOS ===== */
+.recursos{
+  padding: 4rem 8%;
+}
+
+.recursos h1{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards-container{
+  margin-top: 4rem;
+}
+
+.cards-superior,
+.cards-inferior {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cards-inferior{
+  margin-top: 1.5rem;
+}
+
+.card {
+  background-color: #DFDFDF;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 350px; /* 🔹 largura fixa, mantém formato retangular */
+  height: 340px; /* 🔹 altura fixa */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* texto alinhado à esquerda */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card img{
+  height: 50px;
+  margin-left: -0.5rem;
+}
+
+.card h6{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.card p{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.card:hover{
+background: #DFDFDF;
+background: linear-gradient(150deg, rgba(223, 223, 223, 1) 47%, rgba(149, 228, 181, 1) 100%);
+transform: translateY(-6px);
+}
+
+/* ===== RECURSOS RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .cards-superior,
+  .cards-inferior {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+/* ===== RELATOS ===== */
+.relatos{
+  background: #65C28A;
+background: linear-gradient(180deg, rgba(101, 194, 138, 1) 59%, rgba(187, 200, 101, 1) 100%);
+justify-content: center;
+align-items: center;
+padding: 4rem 8%;
+}
+
+.relatos h1{
+  color:#fff;
+  text-align: center;
+}
+
+.cards-container-2{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-2{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 350px; /* 🔹 largura fixa, mantém formato retangular */
+  height: 250px; /* 🔹 altura fixa */
+  display: flex;
+  flex-direction: column;
+  align-items:center; /* texto alinhado à esquerda */
+  text-align: center;
+  box-shadow: 0px 2px 26px -14px rgba(0,0,0,0.39);
+-webkit-box-shadow: 0px 2px 26px -14px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 2px 26px -14px rgba(0,0,0,0.39);
+  transition: transform 0.2s ease;
+}
+
+.cards-2 h6{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cards-2 p{
+  margin-top: 1rem;
+  line-height: 23px;
+}
+
+.cards-2 img{
+  margin-top: 1rem;
+  max-width: 150px;
+}
+
+.cards-2:hover{
+transform: translateY(-6px);
+box-shadow: 0px 2px 14px -3px rgba(255,255,255,0.39);
+-webkit-box-shadow: 0px 2px 14px -3px rgba(255,255,255,0.39);
+-moz-box-shadow: 0px 2px 14px -3px rgba(255,255,255,0.39);
+}
+
+/* ===== RELATOS RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .cards-container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-2 {
+    width: 90%;
+  }
+}
+
+/* ===== PREÇOS ===== */
+.precos{
+ position: relative; 
+  padding: 4rem 8%;
+  overflow: hidden;
+}
+
+.precos img{
+  position: absolute;
+  top: 60%; 
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg); 
+  width: 120%;
+  z-index: -1; 
+  opacity: 0.9; 
+}
+
+.precos h1{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cards-container-3 {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: center;
+}
+
+.cards-3{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 350px;
+  height: auto;
+  min-height: 450px; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 26px -14px rgba(0,0,0,0.33);
+-webkit-box-shadow: 0px 2px 26px -14px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 2px 26px -14px rgba(0,0,0,0.33);
+  transition: transform 0.3s ease;
+}
+
+.cards-3 h6{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.cards-3 p{
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  color:#787593;
+}
+
+.cards-3:hover{
+transform: scale(1.07);
+}
+
+.lista-beneficios {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.lista-beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #333; 
+  text-align: left;
+}
+
+.icone-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  height: 24px;
+  background-color: #6DD78F;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.lista-beneficios li span {
+  font-weight: 400;
+  font-style: normal;
+}
+
+span{
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ===== PREÇOS RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .cards-container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards-2 {
+    width: 90%;
+  }
+}
+
+/* ===== FAQ ===== */
+.FAQ{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 8%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.FAQ h1{
+  font-size: 3rem;
+}
+
+.FAQ h1 span{
+  font-weight: 600;
+}
+
+.FAQ-titulo p{
+  color:#787593;
+  margin-top: 1rem;
+}
+
+.cards-container-FAQ{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.cards-4{
+  background-color: #DFDFDF;
+  width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 1.3rem;
+}
+
+.cards-4:hover{
+  background-color:#DFDFDF;
+  background: linear-gradient(150deg, rgba(223, 223, 223, 1) 47%, rgba(149, 228, 181, 1) 100%);
+}
+
+.titulo-card-FAQ{
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titulo-card-FAQ img{
+  height: 20px;
+}
+
+.cards-4 h3{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cards-4 input {
+  display: none;
+}
+
+.card-conteudo {
+  display: block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.detalhes {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.detalhes p{
+  margin-top: 1.3rem;
+}
+
+.cards-4 input:checked + .card-conteudo .detalhes {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* ===== RODAPÉ ===== */
+.rodape{
+  background-color: #DFDFDF;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 8%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.rodape-titulo h6{
+  font-size: 1.5rem;
+}
+
+.rodape-titulo h6{
+  font-size: 1.5rem;
+}
+
+.rodape-titulo p{
+  font-size: 0.8rem;
+  color: #787593;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.rodape-saiba h6{
+ font-size: 1.5rem;
+ font-weight: 600;
+}
+
+.rodape-saiba a{
+ text-decoration: underline;
+  color: #787593;
+}
+
+.rodape-siga h6{
+ font-size: 1.5rem;
+ font-weight: 600;
+}
+
+.linksaibamais{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.siga-icons{
+  gap:1rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.siga-icons img{
+  height: 25px;
+}
+
+/* ===== BOTÃO "VOLTAR AO TOPO" ===== */
+#btnTopo {
+  position: fixed;
+  bottom: 20px;   /* distância do fundo */
+  right: 20px;    /* distância da direita */
+  background-color:#130D42;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none; /* começa escondido */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background 0.2s;
+}
+
+#btnTopo:hover {
+  transform: scale(1.1);
+  background-color: #65C28A;
+}
+
+/* ===== ANIMAÇÃO AO ROLAR ===== */
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
