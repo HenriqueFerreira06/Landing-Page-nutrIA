@@ -1,4 +1,4 @@
-# 🌐 Landing Page - Nutr.IA
+#  Landing Page - Nutr.IA
 
 <div align="center">
   <img src="imagens/logonutria2.png" alt="Logo Nutr.IA" width="150">
@@ -14,13 +14,13 @@
 
 ---
 
-## 📖 Sobre este Repositório
+##  Sobre este Repositório
 
 Este projeto contém o código-fonte da **Landing Page** desenvolvida para apresentar a startup **Nutr.IA**. O site serve como o principal meio informativo, detalhando a missão, os valores e as funcionalidades do aplicativo planejado.
 
 O desenvolvimento deste portal web foi realizado como parte do Trabalho de Conclusão de Curso (TCC) pelos alunos do **3ºA da Etec de Taboão da Serra (2025)**.
 
-## 🔗 Estrutura do Site
+##  Estrutura do Site
 
 A Landing Page foi projetada para oferecer uma experiência fluida e informativa, dividida nas seguintes seções principais:
 
@@ -31,17 +31,17 @@ A Landing Page foi projetada para oferecer uma experiência fluida e informativa
 * **FAQ:** Seção interativa de perguntas frequentes.
 * **Saiba Mais (Sobre Nós):** Uma página dedicada à história do projeto, missão, visão, valores e apresentação da equipe.
 
-## 📱 Sobre o Projeto Nutr.IA (O Produto)
+##  Sobre o Projeto Nutr.IA (O Produto)
 
 Embora este repositório trate do site, o objetivo dele é divulgar o **Nutr.IA**, uma solução tecnológica para democratizar o acesso à nutrição.
 
 **O que o site divulga:**
-* 🤖 **Personalização via IA:** Planos alimentares adaptados ao orçamento e preferências do usuário.
-* 🛒 **Gestão Inteligente:** Listas de compras automáticas e scanner de produtos.
-* 🏆 **Gamificação:** Sistema de recompensas reais por hábitos saudáveis.
-* 🤝 **Comunidade:** Interação social e suporte mútuo entre usuários.
+*  **Personalização via IA:** Planos alimentares adaptados ao orçamento e preferências do usuário.
+*  **Gestão Inteligente:** Listas de compras automáticas e scanner de produtos.
+*  **Gamificação:** Sistema de recompensas reais por hábitos saudáveis.
+*  **Comunidade:** Interação social e suporte mútuo entre usuários.
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 O site foi construído utilizando tecnologias web fundamentais para garantir desempenho e responsividade:
 
@@ -49,7 +49,7 @@ O site foi construído utilizando tecnologias web fundamentais para garantir des
 * **CSS3:** Estilização avançada, uso de Flexbox/Grid e design responsivo.
 * **JavaScript:** Interatividade, animações de scroll (`scroll-animation`) e manipulação do DOM (ex: botão "Voltar ao Topo" e FAQ).
 
-## 👥 Equipe de Desenvolvimento
+##  Equipe de Desenvolvimento
 
 | Integrante | Função no Projeto | LinkedIn |
 | :--- | :--- | :--- |
@@ -59,7 +59,7 @@ O site foi construído utilizando tecnologias web fundamentais para garantir des
 | **Filipe Guandalino** | Full Stack | [<img src="imagens/linkedIn.png" width="20">](https://www.linkedin.com/in/filipe-guandalino-375281382/) |
 | **João Pedro Nakazoni** | DBA &#124; Gerente Financeiro | [<img src="imagens/linkedIn.png" width="20">](https://www.linkedin.com/in/jo%C3%A3o-pedro-campos-silva-nakazoni-52014b382/) |
 
-## 🚀 Como Executar Localmente
+##  Como Executar Localmente
 
 1.  Clone este repositório:
     ```bash
